@@ -51,9 +51,9 @@ class YagoutPayController extends Controller
         $currency = "ETB"; // Currency: "ETB" for Ethiopian Birr [9]
         $txn_type = "SALE"; // Static value "SALE" [9]
         $success_url = route('payment.callback.success'); // Your success return URL [9]
-        Log::info('succes', $success_url);
+        Log::info('succes' . $success_url);
         $failure_url = route('payment.callback.fail'); // Your failure return URL [9]
-        Log::info('fail', $failure_url);
+        Log::info('fail' . $failure_url);
 
         $channel = "WEB"; // "WEB" for website, "MOBILE" for mobile app [9]
 
